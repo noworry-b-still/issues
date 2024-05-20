@@ -7,6 +7,7 @@ defmodule Issues.MixProject do
       escript: escript_config(),
       version: "0.1.0",
       elixir: "~> 1.15",
+      source_url: "https://github.com/lord-cosmos/issues",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -21,7 +22,9 @@ defmodule Issues.MixProject do
   defp deps do
     [
       {:httpoison, "~> 1.0.0"},
-      { :poison, "~> 3.1" },
+      { :poison,    "~> 3.1" },
+      {:ex_doc, "~> 0.19"},
+      {:earmark,    "~> 1.2.4" },
     ]
   end
 
