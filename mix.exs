@@ -25,6 +25,7 @@ defmodule Issues.MixProject do
       { :poison,    "~> 3.1" },
       {:ex_doc, "~> 0.19"},
       {:earmark,    "~> 1.2.4" },
+      {:stream_data, ">= 0.0.0"},
     ]
   end
 
