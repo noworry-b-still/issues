@@ -29,6 +29,12 @@ defmodule Issues.MixProject do
     ]
   end
 
+    defp aliases do
+    [
+         setup: ["deps.get"]
+    ]
+  end
+
 
   defp escript_config() do
     [
