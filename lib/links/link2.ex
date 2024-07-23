@@ -19,7 +19,7 @@ defmodule Link2 do
   end
 end
 
-Link2.run()
+# Link2.run()
 
 # We can link two processes, which lets each receive information when the other exits.
 # A call to the spawn_link spawns a process and links it to the caller in one operation.
