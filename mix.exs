@@ -22,19 +22,18 @@ defmodule Issues.MixProject do
   defp deps do
     [
       {:httpoison, "~> 1.0.0"},
-      { :poison,    "~> 3.1" },
+      {:poison, "~> 3.1"},
       {:ex_doc, "~> 0.19"},
-      {:earmark,    "~> 1.2.4" },
-      {:stream_data, ">= 0.0.0"},
+      {:earmark, "~> 1.2.4"},
+      {:stream_data, ">= 0.0.0"}
     ]
   end
 
-    defp aliases do
+  defp aliases do
     [
-         setup: ["deps.get"]
+      setup: ["deps.get"]
     ]
   end
-
 
   defp escript_config() do
     [
