@@ -57,5 +57,4 @@ end
 # {:ok, _pid} = GenServer.CheckInSyncGenServer.start_link(pid_of_target_process)
 
 #  donot send the message to genserver, it then sends out the timout message to target process after 5seconds.
-# if you do send the message within 5sec of initilization, server will send the msg to target_process
 # GenServer.CheckInSyncGenServer.send_message(:some_message)
