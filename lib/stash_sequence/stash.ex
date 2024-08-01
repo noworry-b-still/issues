@@ -1,4 +1,4 @@
-defmodule Sequence.Stash do
+defmodule StashSequence.Stash do
   @moduledoc """
   Server that stores a number and provide related routines.
   """
