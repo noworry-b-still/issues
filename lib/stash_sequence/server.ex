@@ -20,7 +20,7 @@ defmodule StashSequence.Server do
   # GenServer implementation
 
   def init(_) do
-    {:ok, Sequence.Stash.get()}
+    {:ok, StashSequence.Stash.get()}
   end
 
   def handle_call(:next_number, _from, current_number) do
@@ -32,6 +32,6 @@ defmodule StashSequence.Server do
   end
 
   def terminate(_reason, current_number) do
-    Sequence.Stash.update(current_number)
+    StashSequence.Stash.update(current_number)
   end
 end
