@@ -1,4 +1,4 @@
-defmodule Sequence.Server do
+defmodule StashSequence.Server do
   use GenServer
 
   #####
