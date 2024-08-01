@@ -6,7 +6,11 @@ defmodule StashSequence.Application do
 
   def start(_type, _args) do
     children = [
-      {StashSequence.Stash}
+      {StashSequence.Stash, 123},
+      {StashSequence.Server, nil}
     ]
+
+    opts = [strategy: :rest_for_one, name: StashSequence.Supervisor]
+    Supervisor.start_link(children, opts)
   end
 end
